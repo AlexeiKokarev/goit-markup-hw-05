@@ -96,6 +96,14 @@ img {
     text-decoration: none;
 }
 
+.nav-link,
+.current::before {
+    content: line;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}
+
 .nav-link:hover {
     color: var(--accent-color);
 }
@@ -551,4 +559,57 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: baseline;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 360px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    z-index: 1;
+    margin-top: 216px;
+}
+
+.subtitel-specifications {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.work-specifications {
+    display: flex;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.box-gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-gallery:hover .overlay {
+    transform: translateY(0);
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.overlay-text {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin: 63px 24px;
 }
