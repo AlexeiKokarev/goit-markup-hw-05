@@ -58,7 +58,6 @@ img {
     line-height: 1.2;
     text-transform: capitalize;
     color: var(--second-color);
-    text-decoration: none;
     margin-right: 93px;
 }
 
@@ -73,7 +72,6 @@ img {
     line-height: 1.2;
     text-transform: capitalize;
     color: var(--whitw-color-texte);
-    text-decoration: none;
 }
 
 .navbar {
@@ -93,7 +91,6 @@ img {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--second-color);
-    text-decoration: none;
 }
 
 .nav-link,
@@ -104,7 +101,8 @@ img {
     border-radius: 2px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -124,13 +122,19 @@ img {
 
 .contact-link {
     color: var(--primari-text-color);
-    text-decoration: none;
     font-weight: 500;
+    display: block;
+    align-items: center;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
-    cursor: pointer;
+}
+
+.contact-link:hover .contact-svg-mail,
+.contact-link:focus .contact-svg-mail {
+    fill: var(--accent-color);
 }
 
 .footer-list {
@@ -150,7 +154,6 @@ img {
     padding: 200px 0;
     background-color: #2F303A;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimg.jpg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-size: cover;
     background-position: center;
 }
@@ -203,6 +206,8 @@ img {
 }
 
 .features-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--primari-text-color);
 }
 
@@ -232,6 +237,7 @@ img {
 }
 
 .team-gallery-item {
+    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -295,7 +301,7 @@ img {
 .ftr-button:focus {
     background-color: var(--accent-color);
     color: var(--whitw-color-texte);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)
 }
 
 .portfolio-list {
@@ -304,7 +310,13 @@ img {
     margin: -15px;
 }
 
-.portfolio-shadow:hover {
+.porfolio-link:focus,
+.porfolio-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-img:focus .porfolio-link,
+.gallery-img:hover .porfolio-link {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -402,8 +414,12 @@ img {
     width: 16px;
     height: 12px;
     fill: #757575;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
 }
 
+.contact-svg-mail:focus,
 .contact-svg-mail:hover {
     fill: var(--accent-color);
 }
@@ -412,8 +428,17 @@ img {
     width: 10px;
     height: 16px;
     fill: #757575;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
 }
 
+.contact-link:hover .contact-svg-phone,
+.contact-link:focus .contact-svg-phone {
+    fill: var(--accent-color);
+}
+
+.contact-svg-phone:focus,
 .contact-svg-phone:hover {
     fill: var(--accent-color);
 }
@@ -461,13 +486,12 @@ img {
 }
 
 .social-member-link:hover,
- :focus {
+.social-member-link:focus {
     background-color: var(--accent-color);
 }
 
-.social-member-link,
-.social-member:hover,
- :focus {
+.social-member-link:hover .social-member,
+.social-member-link:focus .social-member {
     fill: #F5F4FA;
 }
 
@@ -490,12 +514,13 @@ img {
     border-radius: 4px;
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
 }
 
-.client-link svg:hover,
- :focus {
+.client-link:hover .clients-svg,
+.client-link:focus .clients-svg {
     fill: var(--accent-color);
 }
 
@@ -541,13 +566,12 @@ img {
 }
 
 .social-footer-link:hover,
- :focus {
+.social-footer-link:focus {
     background-color: var(--accent-color);
 }
 
-.social-footer-link,
-.social-footer:hover,
- :focus {
+.social-footer-link:hover .social-footer,
+.social-footer-link:focus .social-footer {
     fill: #F5F4FA;
 }
 
