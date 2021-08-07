@@ -626,7 +626,8 @@ img {
     overflow: hidden;
 }
 
-.box-gallery:focus .overlay .box-gallery:hover .overlay {
+.box-gallery:focus .overlay,
+.box-gallery:hover .overlay {
     transform: translateY(0);
 }
 
@@ -636,4 +637,15 @@ img {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin: 63px 24px;
+}
+
+.backdrop {
+    position: fixed;
+}
+
+.modal {
+    position: absolute;
+    min-width: 528px;
+    min-height: 581px;
+    color: #ffffff;
 }
