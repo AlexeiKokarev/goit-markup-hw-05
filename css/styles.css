@@ -710,7 +710,7 @@ img {
     box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, 50%);
 }
 
 .modal-close-btn {
@@ -718,8 +718,6 @@ img {
     width: 18px;
     height: 18px;
     fill: #212121;
-    top: 0;
-    left: 0;
     transform: translate(-50%, -50%);
 }
 
