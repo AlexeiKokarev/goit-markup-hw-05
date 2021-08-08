@@ -701,9 +701,6 @@ img {
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 30px;
     height: 30px;
     padding: 15px;
@@ -718,8 +715,8 @@ img {
     width: 18px;
     height: 18px;
     fill: #212121;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
 }
 
 .btn-modal:focus,
