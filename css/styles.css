@@ -712,6 +712,9 @@ img {
 }
 
 .modal-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 18px;
     height: 18px;
