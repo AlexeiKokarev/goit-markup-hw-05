@@ -699,7 +699,7 @@ img {
 }
 
 .btn-modal {
-    position: relative;
+    position: absolute;
     top: 8px;
     right: 8px;
     width: 30px;
