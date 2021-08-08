@@ -715,8 +715,8 @@ img {
     width: 18px;
     height: 18px;
     fill: #212121;
-    top: 50%;
-    left: 50%;
+    top: 6px;
+    left: 6px;
 }
 
 .btn-modal:focus,
