@@ -710,7 +710,7 @@ img {
     box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
-    transform: translate(-75%, -50%);
+    transform: translate(8px, 8px);
 }
 
 .modal-close-btn {
@@ -720,7 +720,7 @@ img {
     fill: #212121;
     top: 0;
     left: 0;
-    transform: translate(-75%, -50%);
+    transform: translate(14px, 14px);
 }
 
 .btn-modal:focus,
