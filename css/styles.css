@@ -699,7 +699,7 @@ img {
 }
 
 .btn-modal {
-    position: absolute;
+    position: relative;
     top: 8px;
     right: 8px;
     width: 30px;
@@ -710,7 +710,7 @@ img {
     box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
-    transform: translate(-25%, -25%);
+    transform: translate(-50%, -50%);
 }
 
 .modal-close-btn {
