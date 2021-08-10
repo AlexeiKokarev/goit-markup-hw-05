@@ -105,7 +105,7 @@ img {
     display: inline-block;
     position: absolute;
     background-color: var(--accent-color);
-    bottom: 0;
+    bottom: -1px;
     left: 0;
 }
 
